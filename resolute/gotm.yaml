@@ -69,7 +69,7 @@ surface:
          file:                             # path to file with time series [default:]
          column: 1                         # index of column to read from [default:1]
       tx:                                  # prescribed momentum flux in West-East direction [Pa]
-         method: constant                  # method [constant fil:from file; default:constant]
+         method: constant                  # method [constant file:from file; default:constant]
          constant_value: 0.0               # value to use throughout the simulation [Pa; default:0.0]
          file:                             # path to file with time series [default:]
          column: 1                         # index of column to read from [default:1]
@@ -131,7 +131,7 @@ surface:
       method: payne                        # method to compute albedo [constant payne:Payne (1972) cogle:Cogley (1979); default:payne]
       constant_value: 0.0                  # constant value to use throughout the simulation [fraction; min:0.0; max:1.0; default:0.0]
    ice:
-      model: 4                             # model [0:none 1:lebede:Lebedev (1938) 2:mylake 3:winton 4:flato; default:none]
+      model: 4                             # model [0:none 1:lebedev:Lebedev (1938) 2:mylake 3:winton 4:flato; default:none]
       H: 1.0                               # initial ice thickness [m; default:0.0]
       ocean_ice_flux: 10.0                 # ocean->ice heat flux [W/m^2; default:0.0]
       
